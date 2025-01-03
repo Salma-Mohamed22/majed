@@ -42,6 +42,13 @@
     width: max-content;
     padding: 15px;
   }
+  @media (max-width: 1300px) {
+    .container-fluid[_ngcontent-ng-c283169893] {
+        flex-wrap: nowrap !important;
+        width: 100% !important;
+        min-width: 323px !important;
+    }
+}
   @media (min-width: 1300px) {
     .navbar-expand-lg .navbar-toggler {
         display: none !important; 
