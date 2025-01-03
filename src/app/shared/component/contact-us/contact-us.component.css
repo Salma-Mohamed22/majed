@@ -10,6 +10,8 @@
 .contactForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
   padding: 6vw 8vw;
 }
