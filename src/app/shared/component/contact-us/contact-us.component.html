@@ -1,0 +1,82 @@
+<div class="containerr">
+
+        <form class="col-sm-12 col-md-6 contactForm" [formGroup]="contactForm" novalidate>
+           <div class="d-flex flex-column gap-2">
+            <h2 class="section_title white">إتصل بنا الآن</h2>
+            <p class="section_desc white">مرحبا بك في مؤسسة ماجد سوفت لتقنية نظم المعلومات</p>
+           </div>
+            <div class="d-flex gap-3">
+               <!-- Name Field -->
+               <div class="form-group col">
+                   <input
+                     type="text"
+                     class="form-control"
+                     id="name"
+                     formControlName="name"
+                     placeholder="ادخل الاسم"
+                     [ngClass]="{ 'is-valid': contactForm.get('name')?.valid && isSubmitted, 'is-invalid': contactForm.get('name')?.invalid && isSubmitted }"
+                   />
+                   <div *ngIf="isSubmitted && contactForm.get('name')?.invalid" class="invalid-feedback">
+                     <div class="invalid-feedback" *ngIf="contactForm.get('name')?.hasError('required')"> الاسم مطلوب</div>
+                     <div class="invalid-feedback" *ngIf="contactForm.get('name')?.hasError('minlength')">يجب أن لا يقل طول الاسم عن 3 أحرف.</div>
+                   </div>
+                 </div>
+               
+                 <!-- Email Field -->
+                 <div class="form-group col">
+                   <input
+                     type="email"
+                     class="form-control"
+                     id="email"
+                     formControlName="email"
+                     placeholder="ادخل البريد الالكتروني"
+                     [ngClass]="{ 'is-valid': contactForm.get('email')?.valid && isSubmitted, 'is-invalid': contactForm.get('email')?.invalid && isSubmitted }"
+                   />
+                   <div *ngIf="isSubmitted && contactForm.get('email')?.invalid" class="invalid-feedback">
+                     <div class="invalid-feedback" *ngIf="contactForm.get('email')?.hasError('required')">البريد الالكتروني مطلوب</div>
+                     <div class="invalid-feedback" *ngIf="contactForm.get('email')?.hasError('email')">يرجى إدخال عنوان بريد إلكتروني صالح.</div>
+                   </div>
+                 </div>
+            </div>
+         
+               <!-- Message Title Field -->
+               <div class="form-group">
+               <input
+                   type="text"
+                   class="form-control"
+                   id="msg_title"
+                   formControlName="msg_title"
+                   placeholder="ادخل عنوان الرسالة"
+                   [ngClass]="{ 'is-valid': contactForm.get('msg_title')?.valid && isSubmitted, 'is-invalid': contactForm.get('msg_title')?.invalid && isSubmitted }"
+               />
+               <div *ngIf="isSubmitted && contactForm.get('msg_title')?.invalid" class="invalid-feedback">
+                   <div class="invalid-feedback" *ngIf="contactForm.get('msg_title')?.hasError('required')">عنوان الرسالة مطلوب</div>
+               </div>
+               </div>
+           
+               <!-- Message Field -->
+               <div class="form-group">
+               <textarea
+                   class="form-control"
+                   id="message"
+                   formControlName="message"
+                   rows="3"
+                   placeholder="ادخل الرسالة"
+                   [ngClass]="{ 'is-valid': contactForm.get('message')?.valid && isSubmitted, 'is-invalid': contactForm.get('message')?.invalid && isSubmitted }"
+               ></textarea>
+               <div *ngIf="isSubmitted && contactForm.get('message')?.invalid" class="invalid-feedback">
+                   <div class="invalid-feedback" *ngIf="contactForm.get('message')?.hasError('required')">الرسالة مطلوب</div>
+               </div>
+               </div>
+           
+           <!-- Submit Button -->
+           <div class="text-end">
+             <button class="btn primary_btn px-5" type="submit" (click)="onSubmit()">ارسال</button>
+           </div>
+       </form>
+      
+  <div class="map col-sm-12 col-md-6">
+    <iframe title="our-location" style="border:0; width: 100%; height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907.9587320294211!2d39.61667246263506!3d24.45651178645844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdbfa422e201e3%3A0x9fd282b213f017cc!2z2KfZhNi52YrZitix2Yog2YTZhNmI2K3Yr9in2Kog2KfZhNiz2YPZhtmK2Kk!5e0!3m2!1sar!2seg!4v1667200433754!5m2!1sar!2seg" frameborder="0" allowfullscreen=""></iframe>
+  </div>
+
+</div>

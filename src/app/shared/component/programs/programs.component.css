@@ -1,0 +1,48 @@
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+.programs .card {
+    padding: 0px;
+    gap: 0px;
+}
+.card h3 {
+    background-color: var(--primary-color);
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 15px 15px 0px 0px;
+}
+.program_list {
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+ display: flex;
+ gap: 7px;
+ font-size: 1.1rem;
+ font-weight: 600;
+}
+.item .bi {
+    width: 23px;
+    height: 23px;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item .bi-check {
+    background-color: var(--success-color);
+}
+.item .bi-x {
+    background-color: var(--fail-color);
+}

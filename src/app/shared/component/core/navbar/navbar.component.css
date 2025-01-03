@@ -1,0 +1,84 @@
+.navbar {
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    font-size: 18px;
+    z-index: 1;
+    /* background-color: rgba(13, 13, 13, 0.156); */
+}
+.navbar-brand {
+    height: 5vw;
+    min-height: 50px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-item {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-item:has(.nav-link.active) {
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+}
+.nav-link.active {
+    color: var(--gray);
+}
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3csvg xmlns%3d%22http%3a%2f%2fwww.w3.org%2f2000%2fsvg%22 width%3d%2224%22 height%3d%2224%22 viewBox%3d%220%200%2024%2024%22%3e%3cpath fill%3d%22none%22 stroke%3d%22%23fff%22 stroke-width%3d%222%22 d%3d%22M4%207h22M4%2015h22M4%2023h22%22%2f%3e%3c%2fsvg%3e');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    vertical-align: super;
+    border: 0px;
+  }
+
+  .container-fluid .show ul {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    width: max-content;
+    padding: 15px;
+  }
+  @media (min-width: 1300px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important; 
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important; 
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important; 
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+        width: 100%;
+    }
+    .navbar-expand-lg .navbar-collapse.show {
+        display: flex !important;
+        flex-direction: column;
+        gap: 15px 0px;
+        align-items: end;
+    }
+    .navbar-nav {
+    width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+    .container-fluid {
+        flex-wrap: wrap !important;
+    }
+  }
+  .navbar-toggler {
+    border: 0px;
+  }
+  .navbar-toggler:focus {
+   box-shadow: unset;
+   border: 0px;
+  }

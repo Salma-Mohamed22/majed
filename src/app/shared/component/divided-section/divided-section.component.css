@@ -1,0 +1,33 @@
+.divided_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+  }
+  .right_section {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 16px;
+    color: #FFF;
+    width: 60%;
+  }
+  .left_section {
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  @media screen and (max-width: 850px) {
+    .divided_section {
+        gap: 15px;
+    }
+   .left_section , .right_section{
+    width: 100%;
+   }
+  }
+
+  

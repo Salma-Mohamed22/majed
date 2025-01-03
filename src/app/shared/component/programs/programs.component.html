@@ -1,0 +1,14 @@
+<div class="programs">
+    <!-- Loop over each program -->
+    <div *ngFor="let program of programs" class="card">
+      <h3>{{ program.title }}</h3>
+      <ul class="program_list">
+        <!-- Loop over each item in the program -->
+        <li *ngFor="let item of program.items" class="item">
+          <i class="bi" [ngClass]="item.exists ? 'bi-check' : 'bi-x'"></i>{{ item.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  
