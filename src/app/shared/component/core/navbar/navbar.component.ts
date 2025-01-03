@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  activeSection: string = 'home'; // Default active section
 
+  setActive(section: string) {
+    this.activeSection = section;
+  }
 }
