@@ -1,7 +1,7 @@
 .main_img {
     width: 100%;
     height: 60vw;
-    min-height: 400px;
+    min-height: 300px;
     position: relative;
     overflow: hidden;
     border-radius: 0px 0px 10vw 0px;
@@ -30,7 +30,7 @@
     gap: clamp(20px, 4vw, 70px);
 }
 .main_title {
-    font-size:clamp(10px , 5vw, 100px) ;
+    font-size:clamp(20px , 5vw, 100px) ;
     font-weight: bold;
     margin-bottom: 1vw;
 
@@ -54,6 +54,7 @@
 }
 .title_info li h2 {
     font-size: clamp(18px, 2vw, 70px);
+    white-space: nowrap;
 }
 .blue_border {
     height: 3px;

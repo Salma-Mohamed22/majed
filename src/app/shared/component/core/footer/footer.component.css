@@ -34,7 +34,7 @@ footer {
  }
  .footer_sections {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 15px;
  }
  .footer_sections > div {
@@ -44,8 +44,8 @@ footer {
  }
  .footer_title {
     color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 600;
  }
  .footer_sections > div > a {
     color: rgba(255, 255, 255, 0.70) !important;
