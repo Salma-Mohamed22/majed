@@ -17,8 +17,9 @@
     border-radius: 50%;
     background-color: rgba(167, 167, 235, 0.321);
 }
-.card_icon .bi {
+.card_icon .bi::before {
     color: var(--primary-color);
+    vertical-align: -0.2em;
 }
 .card {
     width: 100%;
