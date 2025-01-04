@@ -4,7 +4,7 @@
     min-height: 300px;
     position: relative;
     overflow: hidden;
-    border-radius: 0px 0px 10vw 0px;
+    border-radius: 0px 0px 11vw 0px;
 }
 .black_gradient {
     position: absolute;
@@ -43,6 +43,8 @@
     list-style: none;
     margin: 0px;
     padding: 0px;
+    width: 60%;
+    min-width: max-content;
 }
 .title_info li {
     display: flex;
@@ -53,7 +55,8 @@
     color: #fff;
 }
 .title_info li h2 {
-    font-size: clamp(18px, 2vw, 70px);
+    font-size: clamp(18px, 2.2vw, 70px);
+    font-weight: 500;
     white-space: nowrap;
 }
 .blue_border {

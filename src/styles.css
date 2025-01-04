@@ -8,6 +8,7 @@ body {
     max-width: 3000px;
     margin: auto;
 }
+
 @font-face {
     font-family: 'Tajawal';
     src: url('../src/assets/fonts/Tajawal-Regular.ttf');
@@ -167,7 +168,16 @@ input {
     height: 100%;
     border-radius: 15px;
 }
-
+.fade-in {
+    opacity: 0;
+    transform: translateY(120px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+  
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
 
 @media screen and (min-width: 930px) {
     .card {

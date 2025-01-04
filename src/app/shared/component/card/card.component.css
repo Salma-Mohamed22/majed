@@ -27,6 +27,9 @@
 .card:hover {
     background-color: var(--primary-color);
 }
+.card:hover .card_icon {
+    background-color: rgb(255 255 255 / 32%);
+}
 .card:hover .card_title , .card:hover .card_text {
     color: white;
 }
