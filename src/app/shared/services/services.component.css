@@ -2,6 +2,8 @@
     align-items: center;
     padding: 0px;
     gap: 0px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
 }
 .services {
     display: flex;
@@ -14,6 +16,10 @@
     height: 15vw;
     min-height: 290px;
     max-height: 580px;
+    overflow: hidden;
+}
+.img_card img:hover {
+ transform: scale(1.1);
 }
 .title {
     font-size: 1.3rem;
