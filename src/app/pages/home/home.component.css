@@ -88,7 +88,7 @@
     height:100%;
 }
 .main_parag {
-    background-color: var(--primary-color);
+    background-color: rgba(167, 167, 235, 0.321);
     color: white;
     padding: 40px;
     display: flex;
@@ -116,6 +116,7 @@
     align-items: center;
     gap:10px;
     font-weight: 600;
+   
 }
 .item i {
     width: 25px;
@@ -123,7 +124,7 @@
     font-size: 22px;
 }
 .item *  {
-    color: #fff;
+    color: var(--primary-color);
 }
 .head_desc {
     font-size: 1.8rem;
