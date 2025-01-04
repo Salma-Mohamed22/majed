@@ -119,6 +119,11 @@ input {
     gap: clamp( 20px,4vw,60px);
     padding-left: clamp(20px, 8vw, 200px);
     padding-right: clamp(20px, 8vw, 200px);
+    /* background-image: url("/assets/images/section_bg.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;  */
 }
 .main_section_title {
     font-size: 1.3rem;

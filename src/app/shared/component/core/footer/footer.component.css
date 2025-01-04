@@ -71,3 +71,6 @@ footer {
     transform: translate(0px,0px);
     vertical-align: -0.2em;
  }
+ .footer_desc > span {
+   font-weight: 600;
+ }

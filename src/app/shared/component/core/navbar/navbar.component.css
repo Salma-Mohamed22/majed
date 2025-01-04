@@ -76,7 +76,7 @@
     }
 
     .container-fluid {
-        flex-wrap: nowrap !important;
+        /* flex-wrap: nowrap !important; */
         width: 100% !important;
         min-width: 323px !important;
     }
