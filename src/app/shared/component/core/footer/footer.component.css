@@ -67,10 +67,14 @@ footer {
     justify-content: center;
     text-align: center;
  }
- .social-links a .bi {
+ .social-links a i {
     color: #fff;
     transform: translate(0px,0px);
     vertical-align: -0.2em;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .footer_desc > span {
    font-weight: 600;
