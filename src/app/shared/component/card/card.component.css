@@ -17,6 +17,12 @@
     border-radius: 50%;
     background-color: rgba(167, 167, 235, 0.321);
 }
+.card_icon i {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card_icon .bi::before {
     color: var(--primary-color);
     vertical-align: -0.2em;
